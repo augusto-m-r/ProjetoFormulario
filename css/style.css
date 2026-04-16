@@ -22,6 +22,27 @@ input {
     padding: 10px 0;
 }
 
+input[type="text"], input[type="number"], input[type="date"], input[type="file"], textarea {
+    width: 400px;
+}
+
+textarea {
+    padding: 10px 5px;
+}
+
+.cabecalho h3 {
+    color: #ffffff;
+    margin-top: 0;
+}
+
+.form-container {
+    background-color: #fdfdfd;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: -46px;
+}
+
 .cabecalho {
     height: 160px;
     padding: 20px;
