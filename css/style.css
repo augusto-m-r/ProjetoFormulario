@@ -43,6 +43,22 @@ textarea {
     top: -46px;
 }
 
+.form-header {
+    border-bottom: 1px solid #dfdfdf;
+    height: 45px;
+}
+
+.form-header p {
+    color: #2ad62b;
+    border-bottom: 2px solid #2ad62b;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    height: 45px;
+    list-style: 45px;
+}
+
 .cabecalho {
     height: 160px;
     padding: 20px;
