@@ -64,3 +64,16 @@ textarea {
     padding: 20px;
     background-color: #2ba836;
 }
+
+.form-body {
+    padding: 30px;    
+}
+
+.titulo-form {
+    margin-bottom: 15px;
+}
+
+
+.form-body p {
+    margin-bottom: 15px;
+}
