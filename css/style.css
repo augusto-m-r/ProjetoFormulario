@@ -89,3 +89,13 @@ textarea {
 .block {
     display: block;
 }
+
+.caixaOpcional {
+    display: inline-block;
+    margin: 0 30px 0 30px;
+}
+
+.caixaOpcional li {
+    list-style: none;
+    margin-bottom: 5px;
+}
