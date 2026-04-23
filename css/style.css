@@ -77,3 +77,15 @@ textarea {
 .form-body p {
     margin-bottom: 15px;
 }
+
+.campo-obrigatorio {
+    color: #d80835;
+}
+
+.caixaInputs {
+    margin-bottom: 35px;
+}
+
+.block {
+    display: block;
+}
