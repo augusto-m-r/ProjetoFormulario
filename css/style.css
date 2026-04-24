@@ -124,3 +124,10 @@ hr {
     margin: 20px 0;
     border: none;
 }
+
+.Bolsonaro {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    width: 35%;
+}
