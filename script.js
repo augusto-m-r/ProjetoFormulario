@@ -14,5 +14,5 @@ function salvarCarro(event) {
         titulo,preco,marca,modelo,cambio
     };
 
-    let carros = JSON.parse(localStorage)
+    let carros = JSON.parse(localStorage.getItems("carros")) || [];
 }

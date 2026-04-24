@@ -129,6 +129,6 @@ hr {
     position: fixed;
     bottom: 0;
     right: 20px;
-    width: 35px;
+    width: 100px;
     z-index: 1000;
 }
