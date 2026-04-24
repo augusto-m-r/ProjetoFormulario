@@ -11,8 +11,18 @@ function salvarCarro(event) {
     let cambio = cambioSelecionado ? cambioSelecionado.id : "Não informado";
 
     let carro = {
-        titulo,preco,marca,modelo,cambio
+        titulo,
+        preco,
+        marca,
+        modelo,
+        cambio
     };
 
     let carros = JSON.parse(localStorage.getItems("carros")) || [];
+    carros.push(carro);
+    localStorage.setItem("carros", JSON.stringify(carros));
+
+    adicionarNaTela(carro);
+
+    document.querySelector("form").reset();
 }
