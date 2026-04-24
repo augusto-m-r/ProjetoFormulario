@@ -125,9 +125,10 @@ hr {
     border: none;
 }
 
-.Bolsonaro {
+.bolsonaro {
     position: fixed;
     bottom: 0;
     right: 20px;
-    width: 35%;
+    width: 35px;
+    z-index: 1000;
 }
