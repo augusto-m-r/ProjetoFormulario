@@ -46,14 +46,21 @@ function adicionarNaTela(carro) {
     lista.appendChild(card);
 }
 
-function excluirCarro() {
-    localStorage.clear()
-}
-
 window.onload = function () {
     let carros = JSON.parse(localStorage.getItem('carros')) || [];
 
     carros.forEach(carro => {
         adicionarNaTela(carro);
     });
+}
+
+
+function excluirCarro(id) {
+    let carros = JSON.parse(localStorage.getitem('carros')) || [];
+
+    carros = carros.filter(carro => carro.id !== id);
+
+    localStorage.setItem('carros', JSON.stringify(carros));
+
+    document.getElementById('listaCarros').innerHTML = "";
 }
