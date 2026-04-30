@@ -1,10 +1,10 @@
-function salvarCarro(event) {
+unction salvarCarro(event) {
     event.preventDefault();
 
-    let titulo = documento.getElementById('title').value;
-    let preco = documento.getElementById('preco').value;
-    let marca = documento.getElementById('marca').value;
-    let modelo = documento.getElementById('modelo').value;
+    let titulo = document.getElementById('title').value;
+    let preco = document.getElementById('preco').value;
+    let marca = document.getElementById('marca').value;
+    let modelo = document.getElementById('modelo').value;
 
     let cambioSelecionado = document.querySelector('input[name="marcha"]:checked');
 
@@ -18,7 +18,7 @@ function salvarCarro(event) {
         cambio
     };
 
-    let carros = JSON.parse(localStorage.getItems("carros")) || [];
+    let carros = JSON.parse(localStorage.getItem("carros")) || [];
     carros.push(carro);
     localStorage.setItem("carros", JSON.stringify(carros));
 
@@ -31,6 +31,7 @@ function adicionarNaTela(carro) {
     let lista = document.getElementById('listaCarros');
     let card = document.createElement('div');
     card.classList.add('card');
+
     card.innerHTML = `
     <h3>${carro.titulo}</h3>
     <p><strong>Preço:</strong> R$ ${carro.preco}</p>
@@ -43,7 +44,7 @@ function adicionarNaTela(carro) {
 }
 
 window.onload = function () {
-    let carros = JSON.parse(localStorage.getItem ('carros')) || [];
+    let carros = JSON.parse(localStorage.getItem('carros')) || [];
 
     carros.forEach(carro => {
         adicionarNaTela(carro);
