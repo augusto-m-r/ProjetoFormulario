@@ -63,4 +63,6 @@ function excluirCarro(id) {
     localStorage.setItem('carros', JSON.stringify(carros));
 
     document.getElementById('listaCarros').innerHTML = "";
+
+    carros.forEach(carro => adicionarNaTela(carro));
 }
