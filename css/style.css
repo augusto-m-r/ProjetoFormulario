@@ -132,3 +132,23 @@ hr {
     width: 100px;
     z-index: 1000;
 }
+
+#listaCarros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    width: 250px;
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
