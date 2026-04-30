@@ -46,6 +46,10 @@ function adicionarNaTela(carro) {
     lista.appendChild(card);
 }
 
+function excluirCarro() {
+    localStorage.clear()
+}
+
 window.onload = function () {
     let carros = JSON.parse(localStorage.getItem('carros')) || [];
 
